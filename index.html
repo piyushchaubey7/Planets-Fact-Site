@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Planets - Solar System Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">The Planets</div>
+            <nav>
+                <button class="nav-btn active" data-planet="mercury">Mercury</button>
+                <button class="nav-btn" data-planet="venus">Venus</button>
+                <button class="nav-btn" data-planet="earth">Earth</button>
+                <button class="nav-btn" data-planet="mars">Mars</button>
+                <button class="nav-btn" data-planet="jupiter">Jupiter</button>
+                <button class="nav-btn" data-planet="saturn">Saturn</button>
+                <button class="nav-btn" data-planet="uranus">Uranus</button>
+                <button class="nav-btn" data-planet="neptune">Neptune</button>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Planet Visual -->
+            <div class="planet-visual">
+                <div class="planet" id="planet-display"></div>
+            </div>
+
+            <!-- Planet Info -->
+            <div class="planet-info">
+                <h1 class="planet-title" id="planet-title">Mercury</h1>
+                <p class="planet-description" id="planet-description">
+                    Mercury is the smallest planet in our solar system and the closest to the Sun. 
+                    It's only slightly larger than Earth's Moon and has extreme temperature variations.
+                </p>
+                <div class="source">Source: <strong>Wikipedia</strong></div>
+                
+                <div class="tabs">
+                    <button class="tab">
+                        <span class="tab-number">01</span>
+                        <span>Overview</span>
+                    </button>
+                    <button class="tab">
+                        <span class="tab-number">02</span>
+                        <span>Internal Structure</span>
+                    </button>
+                    <button class="tab">
+                        <span class="tab-number">03</span>
+                        <span>Surface Geology</span>
+                    </button>
+                </div>
+
+                <div class="stats" id="planet-stats">
+                    <div class="stat-card">
+                        <div class="stat-label">Rotation Time</div>
+                        <div class="stat-value">58.6 Days</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Revolution Time</div>
+                        <div class="stat-value">87.97 Days</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Radius</div>
+                        <div class="stat-value">2,439 KM</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Average Temp</div>
+                        <div class="stat-value">167°C</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
